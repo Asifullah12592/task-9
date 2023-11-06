@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document.write  Projects</h1>
+
+    <h4>(7) Qualifications</h4>
+    <script>
+         var qualifications =[,"SSC", "HSC", "BCS",
+            "BS", "BCOM", "MS","M. Phil", "PhD"]
+            for(var i = 1;i <=8 ; i++)
+            // console.log(qualifications)
+            document.write(i +") "+qualifications[i]+"<br>");
+
+
+            var a =["Asif","Hassan","Qasim"]
+            var b = [320,330,280]
+            var total=500
+            
+
+            document.write(" <br><br>(8)<br> <br>"+"Scor of "+a[0]+" is "+b[0]+". "+"Percentag : "+b[0]*100/total+"%")
+            document.write("<br><br>"+"Scor of "+a[1]+" is "+b[1]+". "+"Percentag : "+b[1]*100/total+"%")
+            document.write("<br><br>"+"Scor of "+a[2]+" is "+b[2]+". "+"Percentag : "+b[2]*100/total+"%")
+
+
+
+
+            var color = [" red "," pink "," yellow "," green , "]
+            color.unshift("golden")
+            // color1=color.unshift=prompt("enter your color")
+            document.write("<br>(9)<br>",color)
+
+            var color = [" red "," pink "," yellow "," green , "]
+            color.unshift(prompt("enter your color"))
+            document.write("<br>",color)
+            
+            var color = [" red "," pink "," yellow "," green , "]
+            color.push(prompt("enter your color"))
+            document.write("<br>",color)
+
+            var color = [" red "," pink "," yellow "," green , "]
+            color.unshift("white","orang")
+            document.write("<br>",color)
+
+            var color = [" red "," pink "," yellow "," green , "]
+            // color.shift()
+            document.write("<br>",color)
+
+            color.pop()
+            document.write("<br>",color)
+
+            color.splice(prompt("enter index nomber"),0,prompt("enter names to updaits"))
+            document.write("<br>",color)
+
+
+            var color = [" red "," pink "," yellow "," green , "]
+                console.log(color)
+                document.write("<br>",color);
+
+
+            color.splice(prompt("which index you want to delete"),prompt("how many colors you want to delete."))
+            console.log(color)
+            document.write("<br>"+color)
+
+
+            // // sorting  10
+
+            var score =[320,230,480,120]
+            document.write("<br><br>Scores (10)<br>Scores of Students  ",score)
+            score.sort()
+            document.write("<br>Sorting  ",score)
+
+
+            // //Slice    11
+
+
+            var cities =["Karachi","Lahor","Islamabad","Piahawar","Khuzdar"]
+                document.write("<br><br>Cities List (11):<br>",cities)
+                var oder = cities.slice(1,3)
+                document.write("<br><br>After Slice :<br>",oder)
+
+
+                //Join Methud
+
+                var jon = ["This","is","my","cat"]
+                document.write("<br><br><br><u>Join Methud</u>  (12)<br><br>"+jon)
+                var text = jon.join(" ")
+                document.write("<br><br>After joining<br><br>",text,)
+
+                // Delete-first in first 13
+
+                var del = ["keyboard","mouse","printer","moniter"]
+                document.write("<br><br>Device (13)<br>",del)
+
+                dlt= del.shift()
+                document.write("<br>out<br>",dlt)
+                dlt= del.shift()
+                document.write("<br>out<br>",dlt)
+                dlt= del.shift()
+                document.write("<br>out<br>",dlt)
+                dlt= del.shift()
+                document.write("<br>out<br>",dlt)
+
+
+
+                // Delete-last in first 14
+
+                var out = ["keyboard","mouse","printer","moniter"]
+                document.write("<br><br>Device (14)<br>",del)
+                de= out.pop()
+                document.write("<br>out<br>",de)
+                de= out.pop()
+                document.write("<br>out<br>",de)
+                de= out.pop()
+                document.write("<br>out<br>",de)
+                de= out.pop()
+                document.write("<br>out<br>",de)
+
+    </script>
+</body>
+</html>
